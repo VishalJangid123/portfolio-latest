@@ -108,37 +108,7 @@
 
 
 
-@media  screen and (max-width: 992px) {
-   .portfolio__container{
-    margin-left: auto;
-    margin-right: auto;
-   }
-  }
-  
-  @media  screen and (max-width: 768px) {
-    .portfolio__container{
-        margin-left: var(--mb-1-5);
-        margin-right:  var(--mb-1-5);
-       }
-  }
-  
-  @media  screen and (max-width: 576px) {
-    .portfolio__section{
-        grid-template-columns: initial;
-    }
 
-    .portfolio__button{
-        margin: 0 var(--mb-0-75);
-    }
-  }
-  
-  @media  screen and (max-width: 350px) {
-   .portfolio__data{
-    gap: 0.5rem;
-    
-   }
-  
-  }
 
 
   .nav {
@@ -245,9 +215,7 @@ font-size: var(--small-font-size);
     background-color: var(--text-color);
 }
 
-.portfolio__holder{
-    grid-template-columns: repeat(3,1fr);
-}
+
 
 .portfolio__mainImage img{
     border-radius: 2rem 2rem 0 0;
@@ -257,3 +225,63 @@ font-size: var(--small-font-size);
 .portfolio__content-details{
     padding: var(--mb-1);
 }
+
+ .portfolio__holder{
+         grid-template-columns: repeat(3,1fr);
+     }
+
+@media  screen and (max-width: 992px) {
+    .portfolio__container{
+     margin-left: auto;
+     margin-right: auto;
+    }
+
+  
+   }
+   
+   @media  screen and (max-width: 768px) {
+     .portfolio__container{
+         margin-left: var(--mb-1-5);
+         margin-right:  var(--mb-1-5);
+        }
+ 
+        .portfolio__holder{
+         grid-template-columns: repeat(2,1fr);
+     }
+
+     .portfolio__modal-content{
+        width: 95%;
+        overflow: auto;
+    }
+   }
+   
+   @media  screen and (max-width: 576px) {
+     .portfolio__section{
+         grid-template-columns: initial;
+     }
+ 
+     .portfolio__button{
+         margin: 0 var(--mb-0-75);
+     }
+ 
+     .portfolio__holder{
+         grid-template-columns: repeat(1, 1fr);
+        }
+ 
+        .portfolio__modal-content{
+            width: 95%;
+            overflow: auto;
+        }
+       
+   }
+   
+   @media  screen and (max-width: 350px) {
+    .portfolio__data{
+     gap: 0.5rem;
+     
+    }
+    .portfolio__holder{
+     grid-template-columns: repeat(1, 1fr);
+    }
+   
+   }

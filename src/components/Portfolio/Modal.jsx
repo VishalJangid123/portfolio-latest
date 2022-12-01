@@ -10,7 +10,7 @@ export default function Modal({ closeModal, data }) {
             
           <div className="modal__body">
             <h3 className="portfolio__modal-title">
-            
+            {data.title}
             </h3>
             <div>
                 <span className="techLabel">unity</span>

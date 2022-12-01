@@ -81,3 +81,12 @@ right: 40px;
     pointer-events: none;
     user-select: none;
 }
+
+@media  screen and (max-width: 576px) {
+
+       .galleryWrap{
+           overflow: auto;
+           height: 80%;
+       }
+
+  }
