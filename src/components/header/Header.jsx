@@ -10,14 +10,12 @@ export const Header = () => {
     
     })
     
-    
-    
     const [Toggle, showMenu] = useState(false);
     const [activeNav, setActiveNav] = useState("#home");
   return (
     <header className="header">
         <nav className="nav container">
-            <a href="index.html" className="nav__logo">Vishal</a>
+            <a href="index.html" className="nav__logo">Vishal Jangid</a>
             <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
                 <ul className="nav__list grid">
                     <li className="nav__item">

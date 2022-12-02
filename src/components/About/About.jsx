@@ -1,6 +1,6 @@
 import React from 'react'
 import "./about.css"
-import AboutImg from "../../assests/about.jpg"
+import AboutImg from "../../assests/v2.jpg"
 import CV from "../../assests/John-Cv.pdf"
 import { Info } from './Info'
 
@@ -9,15 +9,14 @@ export const About = () => {
   return (
     <section className="about section" id="about">
       <h2 className="section__title">About Me</h2>
-      <span className="section__subtitle"> My Introduction</span>
+      <span className="section__subtitle"> A little about myself</span>
       <div className="about__container container grid">
         <img src={AboutImg} alt="" className="about__img" />
 
         <div className="about__data">
           <Info />
           <p className="about__description">
-            abdkjabsdaikdskaksdkandksansnd
-            klnasdklasdlacdjnlacdjlacdlnajlcdl
+          Hi, I’m Vishal! I'm a Unity Game Developer with experience in Full stack development. I love to write code to create playable games with complex mechanics. I also enjoy working in full stack. My expertise lies within Unity game engine, and web apps and the main languages/frameworks in my tech stack are C#, ReactJS, and NodeJS. Training for Kickboxing and always ready to play 8-ball pool. 
           </p>
 
           <a download href={CV} className="button button--flex">

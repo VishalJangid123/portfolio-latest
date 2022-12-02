@@ -55,9 +55,9 @@ export const Data = () => {
                 </svg>
         </h1>
         <h3 className="home__subtitle">Game Developer</h3>
-        <p className="home__description">dadasdasdadasdadadasdadadaadsadadadas</p>
+        <p className="home__description">I'm a Unity Game Developer from India, pursuing a Master in Computer Engineering in Thailand and seeking a challenging position as a computer science engineer.</p>
 
-        <a href="" className="button button--flex"> Say Hello 
+        <a href="#contact" className="button button--flex"> Say Hello 
         <svg
                   className="button__icon"
                   xmlns="http://www.w3.org/2000/svg"

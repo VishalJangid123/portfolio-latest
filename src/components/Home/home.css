@@ -24,6 +24,7 @@
 
 .home__social-icon:hover{
     color: var(--title-color-dark);
+    font-size: 1.35rem;
 }
 
 .home__title{
@@ -61,7 +62,7 @@
 }
 
 .home__img{
-    background: url(../../logo.svg);
+    background: url(../../../public/assests/v1.jpg);
     background-repeat:  no-repeat;
     background-position: center;
     background-size: cover;

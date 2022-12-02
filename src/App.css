@@ -143,6 +143,7 @@ img{
 
 .button:hover{
   background-color: var(--title-color-dark);
+  font-weight: var(--font-semi-bold);
 }
 
 .button__icon{
