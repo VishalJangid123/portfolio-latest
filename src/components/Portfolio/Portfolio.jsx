@@ -47,6 +47,14 @@ const Portfolio = () => {
                        C++
                     </a>
                 </li>
+                <li>
+                <a  onClick= {() => setActivePortfolio("python")} 
+                        className={ activeNav === "python" ? "portfolio__link p_active_link  button--flex" 
+                    : "portfolio__link  button--flex"}
+                    >
+                       Python
+                    </a>
+                </li>
             </ul>
        </nav>
 
@@ -66,7 +74,7 @@ const Portfolio = () => {
             <div className='portfolio__content-details'>
                 <i className="uil uil portfolio__icon"></i>
                 <h3 className="portfolio__title">{project.title}</h3>
-                <span className="qualification__subtitle">{project.desc} 
+                <span className="portfolio__subtitle">{project.desc} 
                 
                 </span>
             </div>
