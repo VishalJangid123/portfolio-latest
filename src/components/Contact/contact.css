@@ -47,14 +47,16 @@
 .contact__card-data{
     display: block;
     margin-bottom: var(--mb-0-75);
+    font-size: var(--small-font-size);
 }
 
 .contact__button{
     color: var(--text-color);
-    font-size: var(--small-font-size);
+    font-size: var(--smaller-font-size);
     display: inline-flex;
     justify-content: center;
     column-gap: 0.25rem;
+    
 }
 
 .contact__button-icon{
@@ -62,8 +64,9 @@
     transition: 0.3s;
 }
 
-.contact__button:hover, .contact__button-icon{
+.contact__button:hover, .contact__button-icon:hover{
     transition: translate(0.25rem);
+    color: var(--title-color-dark);
 }
 
 .contact__form-div{

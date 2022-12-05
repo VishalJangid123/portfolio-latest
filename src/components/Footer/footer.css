@@ -32,20 +32,22 @@
 .footer__social{
     display: flex;
     justify-content: center;
-    column-gap: 1.25rem;
+    column-gap: 1rem;
 }
 
 .footer__social-link{
-    background-color: var(--title-color);
-    color: var(--container-color);
+    background-color: var(--container-color);
+    color: var(--title-color);
     font-size: 1.25rem;
-    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    padding: 0.1rem 0.4rem 0.1rem 0.4rem;
     border-radius: 0.5rem;
     display: inline-block;
 }
 
 .footer__social-link:hover{
-    background-color: var(--title-color-dark);
+    background-color: var(--title-color);
+
+    color: var(--container-color);
 }
 
 .footer__copy{

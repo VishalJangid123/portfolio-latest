@@ -1,7 +1,8 @@
 export const unityProjects = {
     unity : [
     {
-        title : "2D Game",
+        title : "VR Visualization of a Thai Historic temple",
+        desc : "Visualization of the Thai temple in Oculus Go VR using Unity Game Engine.",
         main_image : "about.jpg",
         images : [
             {

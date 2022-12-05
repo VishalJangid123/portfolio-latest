@@ -66,9 +66,12 @@ const Portfolio = () => {
             <div className='portfolio__content-details'>
                 <i className="uil uil portfolio__icon"></i>
                 <h3 className="portfolio__title">{project.title}</h3>
+                <span className="qualification__subtitle">{project.desc} 
+                
+                </span>
             </div>
     
-            <span className="portfolio__button" >More <i className="uil uil-arrow-tight portfolio__button-icon"></i></span>
+            <span className="portfolio__button" >More <i className="uil uil-arrow-right portfolio__button-icon"></i></span>
         
         
         </div>

@@ -17,6 +17,8 @@
     display: inline-block;
     column-gap: 0.25rem;
     cursor: pointer;
+    margin: 1rem;
+    position: relative;
 }
 
 .portfolio__button:hover{
@@ -34,6 +36,25 @@
    
 
 }
+
+.portfolio__button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--title-color-dark);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .portfolio__button:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
 
 .portfolio__active{
     color: var(--body-color);

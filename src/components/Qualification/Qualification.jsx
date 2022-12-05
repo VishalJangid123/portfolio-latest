@@ -43,13 +43,14 @@ const Qualification = () => {
             "qualification__content qualification__content-active"
         : "qualification__content"}>
         <div className="qualification__data">
+        
         <div>
-            <h3 className="qualification__title">Master degree</h3>
+            <h3 className="qualification__title">Master of Engineering</h3>
             <span className="qualification__subtitle"> Thammasat University </span>
             <div className="qualification__calender">
                 <i className="uil uil-calendar-alt"></i> 2021 - Present
             </div>
-            </div>
+        </div>
 
             <div>
         <span className="qualification__rounder"></span>
@@ -68,12 +69,28 @@ const Qualification = () => {
         </div>
 
         <div>
-            <h3 className="qualification__title"></h3>
-            <span className="qualification__subtitle"> BKBIET University </span>
+            <h3 className="qualification__title">Bachelor of Technology</h3>
+            <span className="qualification__subtitle"> BK Birla Institute of Engineering & Technology </span>
             <div className="qualification__calender">
-                <i className="uil uil-calendar-alt"></i> 2021 - Present
+                <i className="uil uil-calendar-alt"></i> 2015- 2019
             </div>
             </div>
+        </div>
+
+        <div className="qualification__data">
+        
+        <div>
+            <h3 className="qualification__title"></h3>
+            <span className="qualification__subtitle"> H G International School </span>
+            <div className="qualification__calender">
+                <i className="uil uil-calendar-alt"></i> 2015
+            </div>
+        </div>
+
+            <div>
+        <span className="qualification__rounder"></span>
+        <span className="qualification__line"></span>
+        </div>
         </div>
 
        
@@ -90,10 +107,10 @@ const Qualification = () => {
         : "qualification__content"}>
         <div className="qualification__data">
         <div>
-            <h3 className="qualification__title">work</h3>
-            <span className="qualification__subtitle"> Thammasat University </span>
+            <h3 className="qualification__title">FullStack Developer </h3>
+            <span className="qualification__subtitle"> AllEvents.in </span>
             <div className="qualification__calender">
-                <i className="uil uil-calendar-alt"></i> 2021 - Present
+                <i className="uil uil-calendar-alt"></i> Mar 2020 - Aug 2020
             </div>
             </div>
 
@@ -114,14 +131,48 @@ const Qualification = () => {
         </div>
 
         <div>
-            <h3 className="qualification__title"></h3>
-            <span className="qualification__subtitle"> work2 </span>
+            <h3 className="qualification__title">VR Unity Developer</h3>
+            <span className="qualification__subtitle"> Sufalam Technologies </span>
             <div className="qualification__calender">
-                <i className="uil uil-calendar-alt"></i> 2021 - Present
+                <i className="uil uil-calendar-alt"></i> Aug 2019 - Oct 2019
             </div>
             </div>
         </div>
 
+
+
+        <div className="qualification__data">
+        <div>
+            <h3 className="qualification__title">Software Engineer </h3>
+            <span className="qualification__subtitle"> NewGenApps </span>
+            <div className="qualification__calender">
+                <i className="uil uil-calendar-alt"></i>Jan 2019 - Feb 2019
+            </div>
+            </div>
+
+            <div>
+        <span className="qualification__rounder"></span>
+        <span className="qualification__line"></span>
+        </div>
+        </div>
+
+        <div className="qualification__data">
+
+        <div></div>
+
+        <div>
+        <span className="qualification__rounder"></span>
+        <span className="qualification__line"></span>
+        </div>
+
+        <div>
+            <h3 className="qualification__title">Research-based Internship</h3>
+            <span className="qualification__subtitle"> Thammasat University </span>
+            <div className="qualification__calender">
+                <i className="uil uil-calendar-alt"></i> Sep 2018 - Oct 2018
+            </div>
+            </div>
+        </div>
        
 
     </div>

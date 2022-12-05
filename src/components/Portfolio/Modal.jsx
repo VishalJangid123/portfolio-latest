@@ -17,7 +17,7 @@ export default function Modal({ closeModal, data }) {
 
             </div>
             <p className="portfolio__modal-desc">
-                asdasdashsdasndkhlcklajda
+                {data.desc}
             </p>
             <ImageGallery galleryImages={data.images} />
           </div>

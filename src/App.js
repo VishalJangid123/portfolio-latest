@@ -3,6 +3,7 @@ import "./App.css"
 import { About } from './components/About/About'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
+import Github from './components/Github/Github'
 import { Header } from './components/header/Header'
 import { Home } from './components/Home/Home'
 import Portfolio from './components/Portfolio/Portfolio'
@@ -21,6 +22,7 @@ export const App = () => {
       <Skills />
       <Qualification />
       <Portfolio />
+      <Github />
       <Contact />
     </main>
       <Footer />

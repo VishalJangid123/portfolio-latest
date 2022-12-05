@@ -14,7 +14,13 @@ export const Social = () => {
             <a href="https://www.instagram.com/quantum_free_particle/" rel="noreferrer" className="home__social-icon" target="_blank">
             <i className="uil uil-instagram"></i>
             </a>
+
+            <a href="https://www.facebook.com/vishal.jangid123" rel="noreferrer" className="home__social-icon" target="_blank">
+            <i className="bx bxl-facebook" color="#fff"></i>
+            </a>
             
     </div>
   )
 }
+
+
