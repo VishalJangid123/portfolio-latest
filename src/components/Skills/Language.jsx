@@ -2,8 +2,6 @@ import React from 'react'
 import { lang_data } from './data'
 
 function Language() {
-
-    console.log(lang_data)
   return (
    <div className="skills__content">
     <h3 className="skills__title">Language/ Frameworks </h3>

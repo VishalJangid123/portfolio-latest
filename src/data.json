@@ -1,0 +1,32 @@
+{
+      "title": "Whack A Mouse",
+      "desc": "",
+      "main_image": "p1/s1.png",
+      "date": "Sept-Oct 2018",
+      "tags": [
+        "Unity",
+        "MS Visual Studio"
+      ],
+      "images": [
+        {
+          "img": "p1/s2.png"
+        },
+        {
+          "img": "p1/s3.png"
+        }
+      ],
+      "details": "<span>A 3D android game build in Unity. The main action of the game is to hit the mouse appearing in the kitchen with the spatula.</span>",
+      "links": [
+        {
+          "iconName": "instagram",
+          "link": "instagram.com"
+        },
+        {
+          "iconName": "download-alt",
+          "link": "https://github.com/VishalJangid123/whack-a-mouse/blob/master/Whack%20A%20Mouse/final.apk"
+        }
+      ]
+}
+    
+  
+

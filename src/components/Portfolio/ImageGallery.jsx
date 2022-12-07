@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import "./imagegallery.css";
 
-
 const ImageGallery = (galleryImages) => {
+
   galleryImages = galleryImages.galleryImages
-   const url = "/assests/"
   const [slideNumber, setSlideNumber] = useState(0);
   const [openModal, setOpenModal] = useState(false);
   
@@ -37,17 +36,17 @@ const nextSlide = () => {
             <i className="uil uil-previous btnPrev" onClick={prevSlide}></i>
             <i className="uil uil-step-forward btnNext" onClick={nextSlide}></i>
             <div className="fullScreenImage">
-                <img src={url + galleryImages[slideNumber].img} />
+                <img src={galleryImages[slideNumber].img} />
             </div>
         </div>
     }
    
    <div className="galleryWrap">
     {
-        galleryImages && galleryImages.map((slide, index) => {
+        galleryImages != null && galleryImages.length > 1 && galleryImages.map((slide, index) => {
             return(
                 <div className="single" key={index} onClick = { () => handleOpenModal(index)} >
-                    <img src={url + slide.img} alt="" />
+                    <img src={slide.img} alt="" key={slide.img}/>
                 </div>
             )
         })

@@ -2,7 +2,6 @@ import ImageGallery from "./ImageGallery";
 
 export default function Modal({ closeModal, data }) {
 
-    console.log("data" + data.date);
     return (
       <div className="portfolio__modal">
         <div className="portfolio__modal-content">
@@ -17,7 +16,7 @@ export default function Modal({ closeModal, data }) {
             </div>
             <div className="portfolio__techlabel">
                { data.tags && data.tags.map((tag, index) => {
-              return (  <span className="techLabel">{tag}</span> )
+              return (  <span className="techLabel" key={index}>{tag}</span> )
 
                })
                }
@@ -25,6 +24,7 @@ export default function Modal({ closeModal, data }) {
             {/* <p className="portfolio__modal-desc">
                 {data.desc}
             </p> */}
+            
             <ImageGallery galleryImages={data.images} />
           </div>
 
@@ -35,7 +35,7 @@ export default function Modal({ closeModal, data }) {
           {  
             data.links && data.links.map((d, index) => {
               return(
-              <a href={d.link} > <i className={"uil uil-" + d.iconName}></i></a>
+              <a href={d.link} key={index}> <i className={"uil uil-" + d.iconName}></i></a>
               )
             })
           }

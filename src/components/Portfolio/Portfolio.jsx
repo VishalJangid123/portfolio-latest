@@ -2,11 +2,16 @@ import React, { useEffect, useState } from 'react'
 import "./portfolio.css"
 import Modal from "./Modal";
 
-import {unityProjects} from "./P_Data";
 
+import { onValue, ref } from 'firebase/database';
+import { db } from '../../firebase';
 
 const Portfolio = () => {
     
+
+    const [projects, setProjects] = useState([]);
+    const [isloading, setLoading] = useState(true);
+
     const [Toggle, showMenu] = useState(false);
     const [activeNav, setActivePortfolio] = useState("unity");   
 
@@ -16,10 +21,23 @@ const Portfolio = () => {
         setModal({ show: false, data: null });
       };
 
-    const openProject = (index) => {
-      setModal({ show: true, data: unityProjects[activeNav][index] });
+    const openProject = (project) => {
+      setModal({ show: true, data: project });
     };
-    console.log(unityProjects.unity);
+    
+    useEffect(() => {
+        onValue(ref(db),snapshot => {
+            const data = snapshot.val();
+            if(data != null){
+                let projects = data.projects;
+                setProjects(projects);
+                setLoading(false);
+            }
+        });
+    }, []);
+
+
+
 
   return (
     <section className="about section" id="about">
@@ -59,15 +77,16 @@ const Portfolio = () => {
        </nav>
 
     </div>
+    
 <div className='grid container portfolio__holder'>
     {
-        unityProjects[activeNav] && 
-        unityProjects[activeNav].map((project, index) => {
+        projects != null && projects[activeNav] != null && isloading === false && 
+        projects[activeNav].map((project, index) => {
             return (
            
-                <div className="portfolio__content" key={index} onClick={() => openProject(index)}>
+                <div className="portfolio__content" key={index} onClick={() => openProject(project)}>
             <div className='portfolio__mainImage'>
-                        <img src={ "/assests/" + project.main_image} alt="" className="src" />
+                        <img src={project.main_image} alt="" className="src" key={index} />
 
             </div>
             
