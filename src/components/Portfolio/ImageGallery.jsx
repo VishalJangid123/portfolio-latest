@@ -36,7 +36,12 @@ const nextSlide = () => {
             <i className="uil uil-previous btnPrev" onClick={prevSlide}></i>
             <i className="uil uil-step-forward btnNext" onClick={nextSlide}></i>
             <div className="fullScreenImage">
-                <img src={galleryImages[slideNumber].img} />
+                {
+                    typeof(galleryImages[slideNumber].video) === "undefined" ?
+                    <img src={galleryImages[slideNumber].img} /> :
+                    <iframe width="80%" height="80%" src={"//www.youtube.com/embed/" + galleryImages[slideNumber].img} frameborder="0" allowfullscreen></iframe>
+                }
+                
             </div>
         </div>
     }
@@ -46,8 +51,15 @@ const nextSlide = () => {
         galleryImages != null && galleryImages.length > 1 && galleryImages.map((slide, index) => {
             return(
                 <div className="single" key={index} onClick = { () => handleOpenModal(index)} >
-                    <img src={slide.img} alt="" key={slide.img}/>
-                </div>
+                    {
+                    slide.video != null ? 
+                        <div className="imagegallary__video">
+                            <img src={"https://img.youtube.com/vi/" + slide.img + "/0.jpg"} alt="" key={slide.img}/>
+                            <i className='bx bx-play'></i>
+                        </div>:
+                        <img src={slide.img} alt="" key={slide.img}/>
+                    }
+                    </div>
             )
         })
     }

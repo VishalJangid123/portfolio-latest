@@ -5,12 +5,15 @@ export default function Modal({ closeModal, data }) {
     return (
       <div className="portfolio__modal">
         <div className="portfolio__modal-content">
-        <i className="uil uil-times portfolio__modal-close" onClick={() => closeModal()}> </i>
+        <div className="modal__header">
+          <i className="uil uil-times portfolio__modal-close" onClick={() => closeModal()}> </i>
+              <h3 className="portfolio__modal-title">
+              {data.title}
+              </h3>
+
+        </div>
             
           <div className="modal__body">
-            <h3 className="portfolio__modal-title">
-            {data.title}
-            </h3>
             <div className="portfolio__modal-date">
               <span className="modal-date">{data.date}</span>
             </div>
@@ -26,9 +29,9 @@ export default function Modal({ closeModal, data }) {
             </p> */}
             
             <ImageGallery galleryImages={data.images} />
+          <div className="portfolio__modal-details" dangerouslySetInnerHTML={{__html: data.details}}>
           </div>
 
-          <div className="portfolio__modal-details" dangerouslySetInnerHTML={{__html: data.details}}>
             
           </div>
           <div className="modal__footer">
