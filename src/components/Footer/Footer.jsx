@@ -41,7 +41,7 @@ const Footer = () => {
         </div>
 
 
-        <span className="footer__copy">Made by Vishal </span>
+        <span className="footer__copy">Last updated: 8 Dec 2022 | Views:<div id="visit__footer"></div>  </span>
     </div>
    </footer>
   )
