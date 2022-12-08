@@ -72,6 +72,12 @@
     width: 300px;
     height: 300px;
     animation: profile__animate 8s ease-in-out infinite 1s;
+    filter: grayscale(100%);
+}
+
+.home__img:hover{
+    filter: grayscale(0);
+
 }
 
 @keyframes profile__animate {

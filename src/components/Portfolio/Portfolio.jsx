@@ -116,14 +116,17 @@ const Portfolio = () => {
 
     </div>
     
-
+{
+    isloading === true ?       
+    <div className='portfolio__loader'><i class='bx bx-loader-alt bx-spin portfolio__loader-icon'></i></div>
+    :
     <div className="portfolio__main-container">
-    <div className="portfolio__slider-left-icon" onClick={() => slideLeft()}> 
-            <i className="uil uil-arrow-circle-left"></i>
+        <div className="portfolio__slider-left-icon" onClick={() => slideLeft()}> 
+            <i className="uil uil-arrow-left"></i>
         </div>
 
         <div className="portfolio__slider-right-icon" onClick={() => slideRight()}>
-            <i className="uil uil-arrow-circle-right"></i>
+            <i className="uil uil-arrow-right"></i>
         </div>
 
         <div className="portfolio__slider-dots">
@@ -138,13 +141,8 @@ const Portfolio = () => {
         </div>
         
 
-
 <div className='grid container portfolio__holder' id="portfolio__holder-id">
    
-
-    
-    
-    
     {
         projects != null && projects[activeNav] != null && isloading === false && 
         projects[activeNav].map((project, index) => {
@@ -171,9 +169,11 @@ const Portfolio = () => {
        
             )
         })
-    }
+}
     </div>
+
     </div>
+}
    
     
     {modal.show && modal.data && <Modal closeModal={handleClose} data={modal.data} />}

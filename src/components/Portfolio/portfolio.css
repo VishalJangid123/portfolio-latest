@@ -5,6 +5,16 @@
     max-width: 1200px;
 }
 
+.portfolio__loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: var(--mb-2);
+}
+
+.portfolio__loader-icon{
+    font-size: 5rem;
+}
 
 /* SLIDER */
 .portfolio__swipe-more{
