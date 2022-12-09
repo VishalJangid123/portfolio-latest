@@ -76,12 +76,9 @@ const Portfolio = () => {
     }
 
   return (
-    <section className="about section" id="about">
+    <section className="about section" id="portfolio">
       <h2 className="section__title">Portfolio</h2>
       <span className="section__subtitle"> Projects I had worked on</span>
-
-     
-
 
       <div className="portfolio__container container">
     <div className="portfolio__tabs">
@@ -118,7 +115,7 @@ const Portfolio = () => {
     
 {
     isloading === true ?       
-    <div className='portfolio__loader'><i class='bx bx-loader-alt bx-spin portfolio__loader-icon'></i></div>
+    <div className='portfolio__loader'><i className='bx bx-loader-alt bx-spin portfolio__loader-icon'></i></div>
     :
     <div className="portfolio__main-container">
         <div className="portfolio__slider-left-icon" onClick={() => slideLeft()}> 

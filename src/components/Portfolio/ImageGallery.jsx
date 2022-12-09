@@ -39,7 +39,7 @@ const nextSlide = () => {
                 {
                     typeof(galleryImages[slideNumber].video) === "undefined" ?
                     <img src={galleryImages[slideNumber].img} /> :
-                    <iframe width="80%" height="80%" src={"//www.youtube.com/embed/" + galleryImages[slideNumber].img} frameborder="0" allowfullscreen></iframe>
+                    <iframe width="80%" height="80%" src={"//www.youtube.com/embed/" + galleryImages[slideNumber].img + "?autoplay=1&mute=1&origin=https://vishaljangid123.github.io/portfolio-latest"} autoPlay="1" frameBorder="0" ></iframe>
                 }
                 
             </div>
@@ -48,7 +48,7 @@ const nextSlide = () => {
    
    <div className="galleryWrap">
     {
-        galleryImages != null && galleryImages.length > 1 && galleryImages.map((slide, index) => {
+        galleryImages != null && galleryImages.length >= 1 && galleryImages.map((slide, index) => {
             return(
                 <div className="single" key={index} onClick = { () => handleOpenModal(index)} >
                     {
