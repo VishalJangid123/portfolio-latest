@@ -1,7 +1,5 @@
 import React from 'react'
 import "./footer.css"
-import LineImg from "../../assests/line.png"
-
 
 const Footer = () => {
   return (

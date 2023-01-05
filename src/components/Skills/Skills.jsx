@@ -9,7 +9,7 @@ const Skills = () => {
   return (
     <section className="about section" id="skills">
       <h2 className="section__title">Skills</h2>
-      <span className="section__subtitle"> I enojoy working on</span>
+      <span className="section__subtitle"> I enjoy working on</span>
       <div className="skills__container container grid">
         <Language />
         <Software />
