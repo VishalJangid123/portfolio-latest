@@ -24,14 +24,15 @@ const Contact = () => {
                     </div>
 
                     <div className="contact__card">
-                        <i className="bx bx-mail-send contact__card-icon"></i>
+                    <i className="uil uil-line contact__card-icon"></i>
+                        
+                        <h3 className="contact__card-title">Line</h3>
+                        <span className="contact__card-data">vishaljangid123</span>
 
-                        <h3 className="contact__card-title">Email</h3>
-                        <span className="contact__card-data">vishaljangid1@outlook.com</span>
-
-                        <a href="" className="contact__button">
-                            Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+                        <a href="https://line.me/ti/p/54ecpXAs48" target="_blank" rel="noopener noreferrer" className="contact__button">
+                            Message me <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                         </a>
+
                     </div>
                 </div>
 
@@ -46,15 +47,25 @@ const Contact = () => {
                         <label htmlFor="" className="contact__form-tag">Name</label>
                         <input type="text" name="name"
                          className="contact__form-input"
-                         placeholder="Insert your name" />
-
-<label htmlFor="" className="contact__form-tag">Name</label>
+                         placeholder="Your name" />
+                    </div>
+                    <div className="contact__form-div">
+                    <label htmlFor="" className="contact__form-tag">Email</label>
                         <input type="text" name="name"
                          className="contact__form-input"
-                         placeholder="Insert your name" />
+                         placeholder="Your name" />
                     </div>
 
+                    <div className="contact__form-div">
+                    <label htmlFor="" className="contact__form-tag">Message</label>
+                        <textarea  name="name"
+                         className="contact__form-input"
+                         placeholder="Your message" />
+                    </div>
+
+                    <div className="contact__form-div" style={{marginTop: "5rem"}}>
                     <button href="" className="button button--flex">Say Hello</button>
+                    </div>
                 </form>
             </div>
         </div>

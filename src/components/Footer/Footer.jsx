@@ -1,5 +1,7 @@
 import React from 'react'
 import "./footer.css"
+import LineImg from "../../assests/line.png"
+
 
 const Footer = () => {
   return (
@@ -35,6 +37,10 @@ const Footer = () => {
             </a>
             <a href="https://www.facebook.com/vishal.jangid123" rel="noreferrer" className="footer__social-link" target="_blank">
         <i className="bx bxl-facebook" color="#fff"></i>
+        </a>
+
+        <a href="https://line.me/ti/p/54ecpXAs48" rel="noreferrer" className="footer__social-link" target="_blank">
+        <i className="uil uil-line"></i>
         </a>
         
 

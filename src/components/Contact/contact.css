@@ -30,6 +30,12 @@
     text-align: center;
 }
 
+.contact__card:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px lightgray;
+}
+
+
 .contact__card-icon{
     font-size: 2rem;
     color: var(--title-color);
@@ -101,6 +107,10 @@
 
 .contact__form-area{
     height: 11rem;
+}
+
+.contact__form-div textarea{
+    height: 7rem;
 }
 
 @media  screen and (max-width: 992px) {

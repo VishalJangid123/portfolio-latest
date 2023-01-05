@@ -18,6 +18,10 @@ export const Social = () => {
             <a href="https://www.facebook.com/vishal.jangid123" rel="noreferrer" className="home__social-icon" target="_blank">
             <i className="bx bxl-facebook" color="#fff"></i>
             </a>
+
+            <a href="https://line.me/ti/p/54ecpXAs48" rel="noreferrer" className="home__social-icon" target="_blank">
+            <i className="uil uil-line" color="#fff"></i>
+            </a>
             
     </div>
   )
