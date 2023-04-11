@@ -43,6 +43,7 @@ export default function Modal({ closeModal, data }) {
             })
           }
           </div>
+          <p className="modal__footer__btmlink">Links for more info</p>
         </div>
       </div>
     );

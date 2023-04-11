@@ -89,23 +89,32 @@ const Portfolio = () => {
                         className={ activeNav === "unity" ? "portfolio__link p_active_link  button--flex" 
                     : "portfolio__link button--flex"}
                     >
-                        Unity
+                        Unity ({projects["unity"] == null ? "0": projects["unity"].length})
                     </a>
                 </li>
                 <li>
-                <a  onClick= {() => setActivePortfolio("cpp")} 
-                        className={ activeNav === "cpp" ? "portfolio__link p_active_link  button--flex" 
+                <a  onClick= {() => setActivePortfolio("ReactJS")} 
+                        className={ activeNav === "ReactJS" ? "portfolio__link p_active_link  button--flex" 
                     : "portfolio__link  button--flex"}
                     >
-                       C++
+                       React & Node  ({projects["ReactJS"] == null ? "0": projects["ReactJS"].length})
                     </a>
                 </li>
                 <li>
-                <a  onClick= {() => setActivePortfolio("python")} 
-                        className={ activeNav === "python" ? "portfolio__link p_active_link  button--flex" 
+                <a  onClick= {() => setActivePortfolio("Python")} 
+                        className={ activeNav === "Python" ? "portfolio__link p_active_link  button--flex" 
                     : "portfolio__link  button--flex"}
                     >
-                       Python
+                       Python ({projects["Python"] == null ? "0": projects["Python"].length})
+                    </a>
+                </li>
+
+                <li>
+                <a  onClick= {() => setActivePortfolio("Andriod")} 
+                        className={ activeNav === "Andriod" ? "portfolio__link p_active_link  button--flex" 
+                    : "portfolio__link  button--flex"}
+                    >
+                       Andriod ({projects["Andriod"] == null ? "0": projects["Andriod"].length})
                     </a>
                 </li>
             </ul>
@@ -118,24 +127,24 @@ const Portfolio = () => {
     <div className='portfolio__loader'><i className='bx bx-loader-alt bx-spin portfolio__loader-icon'></i></div>
     :
     <div className="portfolio__main-container">
-        <div className="portfolio__slider-left-icon" onClick={() => slideLeft()}> 
+        {/* <div className="portfolio__slider-left-icon" onClick={() => slideLeft()}> 
             <i className="uil uil-arrow-left"></i>
         </div>
 
         <div className="portfolio__slider-right-icon" onClick={() => slideRight()}>
             <i className="uil uil-arrow-right"></i>
-        </div>
+        </div> */}
 
-        <div className="portfolio__slider-dots">
+        {/* <div className="portfolio__slider-dots">
             {
                 dotelement()
             }
 
-        </div>
+        </div> */}
 
-        <div className='portfolio__swipe-more'>
+        {/* <div className='portfolio__swipe-more'>
             <span>Swipe for more </span><i class='bx bxs-chevrons-right bx-fade-right'></i>
-        </div>
+        </div> */}
         
 
 <div className='grid container portfolio__holder' id="portfolio__holder-id">

@@ -1,11 +1,12 @@
+
 {
-      "title": "Whack A Mouse 3",
-      "desc": "",
+      "title": "Chat Application",
+      "desc": " Chat Application for Android ",
       "main_image": "p1/s1.png",
-      "date": "Sept-Oct 2018",
+      "date": "Jan 2021",
       "tags": [
         "Unity",
-        "MS Visual Studio"
+        "Visual Studio"
       ],
       "images": [
         {
@@ -15,7 +16,7 @@
           "img": "p1/s3.png"
         }
       ],
-      "details": "<span>A 3D android game build in Unity. The main action of the game is to hit the mouse appearing in the kitchen with the spatula.</span>",
+      "details": "<span>Chat Application for Android for Android using Android Studio and Firebase.</span>",
       "links": [
         {
           "iconName": "instagram",

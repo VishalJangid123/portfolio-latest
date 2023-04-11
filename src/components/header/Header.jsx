@@ -51,6 +51,23 @@ export const Header = () => {
                     </li>
 
                     <li className="nav__item">
+                        <a href="#github" onClick={() => setActiveNav("#github")} 
+                        className={ activeNav === "#github" ? "nav__link active-link" 
+                    : "nav__link"}>
+                            <i className="uil uil-github-alt nav__icon"></i> Github
+                        </a>
+                    </li>
+                    
+                    <li className="nav__item">
+                        <a href="#publication" onClick={() => setActiveNav("#publication")} 
+                        className={ activeNav === "#portfolio" ? "nav__link active-link" 
+                    : "nav__link"}>
+                            <i className="uil uil-file-graph nav__icon"></i> Publication
+                        </a>
+                    </li>
+
+
+                    <li className="nav__item">
                         <a href="#contact" onClick={() => setActiveNav("#contact")} 
                         className={ activeNav === "#contact" ? "nav__link active-link" 
                     : "nav__link"}>

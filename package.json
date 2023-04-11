@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "homepage": "https://vishaljangid123.github.io/portfolio-latest",
   "private": true,
+
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -14,7 +15,11 @@
     "react-github-calendar": "^3.4.0",
     "react-scripts": "5.0.1",
     "uid": "^2.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "classnames": "^2.3.2",
+    "node": "^19.3.0",
+    "postcss": "^8.4.20",
+    "scss-loader": "^0.0.1"
   },
   "scripts": {
     "predeploy": "npm run build",

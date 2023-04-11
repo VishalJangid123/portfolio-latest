@@ -43,8 +43,6 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    z-index: 1000;
-
 }
 .portfolio__slider-left-icon, .portfolio__slider-right-icon{
     position: absolute;
@@ -226,14 +224,19 @@ right: 0;
     opacity: 1;
     padding: var(--mb-0-5);
     color: var(--title-color);
-    font-size: var(--smaller-font-size);
+    font-size: var(--h2-font-size);
 }
 
 .modal__footer a:hover {
     color: var(--title-color-dark);
-    font-size: var(--small-font-size);
+    
 }
 
+.modal__footer__btmlink{
+    font-size: var(--smaller-font-size);
+    display: flex;
+    justify-content: center;
+}
 
   .nav {
     height: calc(var(--header-height) + 1.5rem);
@@ -256,6 +259,10 @@ right: 0;
     font-size: var(--small-font-size);
     font-weight: var(--font-medium);
     transition: .3s;
+}
+
+.portfolio__link:hover{
+   cursor: pointer;
 }
 
 .p_active_link{
@@ -388,11 +395,11 @@ font-size: var(--small-font-size);
 }
 
  .portfolio__holder{
-         /* grid-template-columns: repeat(3,1fr); */
+         grid-template-columns: repeat(3,1fr);
          white-space: nowrap;
     display: grid;
-    overflow-x: auto;
-    grid-auto-flow: column;
+    /* overflow-x: auto; */
+    /* grid-auto-flow: column; */
     grid-auto-columns: minmax(270px, 1fr);
     scrollbar-width: none;
     scroll-behavior: smooth;
@@ -452,9 +459,10 @@ font-size: var(--small-font-size);
      .portfolio__holder{
         white-space: nowrap;
         display: grid;
-        overflow-x: auto;
-        grid-auto-flow: column;
+        /* overflow-x: auto; */
+        /* grid-auto-flow: column; */
         grid-auto-columns: minmax(270px, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         scrollbar-width: none;
         scroll-behavior: smooth;
         padding-bottom: var(--mb-1);

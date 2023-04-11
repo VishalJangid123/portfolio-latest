@@ -1,5 +1,6 @@
 import React from 'react'
 import "./contact.css"
+import { Button, Grid } from "feather-react-ui"
 
 const Contact = () => {
   return (
@@ -41,7 +42,7 @@ const Contact = () => {
 
             <div className="contact__content">
                 <h3 className="contact__title">Write me your project</h3>
-
+ 
                 <form action="" className="contact__form">
                     <div className="contact__form-div">
                         <label htmlFor="" className="contact__form-tag">Name</label>
@@ -64,7 +65,8 @@ const Contact = () => {
                     </div>
 
                     <div className="contact__form-div" style={{marginTop: "5rem"}}>
-                    <button href="" className="button button--flex">Say Hello</button>
+                    {/* <button href="" className="button button--flex">Say Hello</button> */}
+                    <Button>Send Message</Button>
                     </div>
                 </form>
             </div>

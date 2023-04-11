@@ -1,0 +1,33 @@
+.publication__content{
+    grid-template-columns: repeat(2, 350px);
+    column-gap: 3rem;
+    justify-content: center;
+}
+
+.publication__content a{
+    text-decoration: none;
+    color: var(--title-color);
+}
+
+
+.publication__card{
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 2rem 4rem;
+    border-radius: 1.25rem;
+}
+
+
+.publication__card p, .publication__card a{
+    font-size: var(--smaller-font-size);
+}
+
+.publication__card-header{
+    font-weight: 500;
+    color: var(--title-color-dark);
+}
+
+.publication__card:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 20px grey;
+}

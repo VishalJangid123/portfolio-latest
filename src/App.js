@@ -7,6 +7,7 @@ import Github from './components/Github/Github'
 import { Header } from './components/header/Header'
 import { Home } from './components/Home/Home'
 import Portfolio from './components/Portfolio/Portfolio'
+import Publication from './components/Publications/Publication'
 import Qualification from './components/Qualification/Qualification'
 import ScrollUp from './components/ScrollUp/ScrollUp'
 import Skills from './components/Skills/Skills'
@@ -23,6 +24,7 @@ export const App = () => {
       <Qualification />
       <Portfolio />
       <Github />
+      <Publication />
       <Contact />
     </main>
       <Footer />
